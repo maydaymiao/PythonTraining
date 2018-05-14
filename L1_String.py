@@ -1,3 +1,13 @@
+'''
+print
+mulitlines打印分段
+len
+slice [0] [0:b] [:b] [a:]
+string methods: lower, count, index, find, replace
+字符串连接（+，+' '+， .format, fstring）
+dir, help()
+'''
+
 print('hello world')
 message = 'Hello World'
 print(message)
