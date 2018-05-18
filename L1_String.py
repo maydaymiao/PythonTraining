@@ -48,3 +48,19 @@ print('{0} {1}. Welcome'.format(greeting, name))
 print(f'{greeting} {name}. Welcome')    # Python 3.6以后引入的方法
 
 print(help(str))
+
+print(type(3))
+print(type(3.14))
+print(3/2)
+print(3//2) #除法取整
+print(3**2)
+print(7%2)
+num = 1
+# Python里没有++和--
+num += 1
+print(num)
+
+strNum1 = '100'
+strNum2 = '200'
+print(strNum1 + strNum2)
+print(int(strNum1) + int(strNum2))
