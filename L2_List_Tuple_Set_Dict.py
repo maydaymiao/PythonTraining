@@ -39,3 +39,30 @@ languages.remove('PHP') # remove不会返回
 popped = languages.pop()
 print('popped: ',popped)
 print(languages)
+
+languages.reverse()
+print(languages)
+languages.sort()
+print(languages)
+
+lanSort = sorted(languages)
+print(languages)
+print(lanSort)
+
+nums = [1,5,2,4,3]
+print(f'min: {min(nums)}, max: {max(nums)}, sum: {sum(nums)}')
+
+print(languages.index('Python'))    # 如果找不到元素，会直接报错
+result = 'VB' in languages  # return false
+print(result)
+
+for language in languages:
+    print(language)
+
+for index, language in enumerate(languages, start=1):
+    print(index, language)
+
+strLan = ', '.join(languages)
+print(strLan)
+newList = strLan.split(', ')
+print(newList)
