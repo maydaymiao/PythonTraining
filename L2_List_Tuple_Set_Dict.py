@@ -66,3 +66,52 @@ strLan = ', '.join(languages)
 print(strLan)
 newList = strLan.split(', ')
 print(newList)
+
+
+## tuple只支持查询，不支持任何和修改相关的函数
+# t1 = ('a', 'b', 'c')
+# print(t1.index('b'))
+
+# s1 = {'C++', 'Python', 'Java', 'PHP', 'Python'}
+# s2 = {'Python', 'VB'}
+# print(s1)
+# print('Java' in s1)
+# print('交集：',s1.intersection(s2))
+# print('差集', s1.difference(s2))
+# print('并集', s1.union(s2))
+
+# l1 = []
+# l2 = list()
+#
+# t1 = ()
+# t2 = tuple()
+#
+# s1 = set()
+#
+# d1 = {}
+# d2 = dict() # 字典
+
+# 键值 key value
+employee1 = {'name': 'Michael', 'age': 30, 'skill': ['Python', 'Lego']}
+# print(employee1)
+# print(employee1['name'])
+# print(employee1['phone']) # 用这种方法，如果key不存在，则直接报错
+# print(employee1.get('phone', 'Not Found'))
+employee1['phone'] = '139123456'
+# print(employee1)
+# employee1.update({'gender': 'male', 'phone': '139'})
+print(employee1)
+
+# del employee1['phone']
+# popped = employee1.pop('phone')
+# print(popped)
+# print(employee1)
+
+# print(employee1['skill'][0])
+
+print(employee1.keys())
+print(employee1.values())
+print(employee1.items())
+
+for key, value in employee1.items():
+    print(key, value)
